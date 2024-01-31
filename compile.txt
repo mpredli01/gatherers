@@ -1,0 +1,1 @@
+/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/bin/javac src/main/java/org/redlich/gatherers/*.java --enable-preview --release 22 -d target/classes

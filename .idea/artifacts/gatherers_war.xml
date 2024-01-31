@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gatherers:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>gatherers</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="data-1.0.0.war">
+      <element id="artifact" artifact-name="gatherers:war exploded" />
+    </root>
+  </artifact>
+</component>

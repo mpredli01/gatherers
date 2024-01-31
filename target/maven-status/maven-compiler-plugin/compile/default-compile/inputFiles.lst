@@ -1,0 +1,4 @@
+/usr/local/publications/gatherers/src/main/java/org/redlich/gatherers/Application.java
+/usr/local/publications/gatherers/src/main/java/org/redlich/gatherers/DistinctByLength.java
+/usr/local/publications/gatherers/src/main/java/org/redlich/gatherers/FixedWindow.java
+/usr/local/publications/gatherers/src/main/java/org/redlich/gatherers/TempReading.java
