@@ -1,3 +1,0 @@
-/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/bin/java --enable-preview org/redlich/gatherers/Application
-
-/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/bin/java --enable-preview org/redlich/gatherers/TempReading

@@ -13,7 +13,6 @@
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
         <exec.mojo.version>3.1.0</exec.mojo.version>
-        <faker.version>1.0.2</faker.version>
         <mainClass>org.redlich.gatherers.FixedWindow</mainClass>
     </properties>
 
