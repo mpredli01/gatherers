@@ -2,15 +2,15 @@
 
 Example applications on how to use JEP 461, Stream Gatherers (Preview)
 
-
-
-Since this is a preview feature, the --enable-preview compiler option must be used on the command line or defined in Maven
+Since this is an early-access release of JDK 22, the --enable-preview compiler option must be used on the command line or defined in Maven
 
 ### Command Line
 
 #### Compile
 
 `/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/bin/javac src/main/java/org/redlich/gatherers/*.java --enable-preview --release 22 -d target/classes`
+
+`javac src/main/java/org/redlich/gatherers/*.java --enable-preview --release 22 -d target/classes`
 
 #### Execute
 
@@ -22,7 +22,9 @@ Change directory to `target/classes`
                 
 ### Maven
 
-These properties and plugin are defined in the `pom.xml` file:
+If you add these properties and plugin as defined in the `pom.xml` file, you can compile and execute the application with:
+
+`mvn clean compile exec:java`
 
 `<properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

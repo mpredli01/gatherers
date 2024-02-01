@@ -15,6 +15,7 @@ public record DistinctByLength(String str) {
      */
     public static void main(String[] args) {
         displayTitle("[APP] Welcome to the Stream Gatherers Demo Application");
+        System.out.println("\n");
 
         var result = Stream.of("Jakarta", "", "EE", "will", "be", "released", "", "soon")
                 .map(DistinctByLength::new)

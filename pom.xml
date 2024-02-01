@@ -13,7 +13,7 @@
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
         <exec.mojo.version>3.1.0</exec.mojo.version>
-        <mainClass>org.redlich.gatherers.FixedWindow</mainClass>
+        <mainClass>org.redlich.gatherers.DistinctByLength</mainClass>
     </properties>
 
     <dependencies>

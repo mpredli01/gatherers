@@ -13,6 +13,10 @@ import java.util.stream.Stream;
  *
  */
 record TempReading(Instant obtainedAt, int kelvins) {
+
+    /*
+     *
+     */
     TempReading(String time, int kelvins) {
         this(Instant.parse(time), kelvins);
         }
@@ -22,16 +26,20 @@ record TempReading(Instant obtainedAt, int kelvins) {
      */
     public static void main(String[] args) {
         displayTitle("[APP] Welcome to the Stream Gatherers Demo Application");
+        System.out.println("\n");
 
         Stream<TempReading> readings = loadRecentTempReadings();
         System.out.println("[APP] Most recent temperature readings:");
         readings.forEach(reading -> System.out.println("[APP] * " + reading.kelvins() + "ºK read on " + reading.obtainedAt()));
+        System.out.println("\n");
 
+        System.out.println("[APP] Finding suspicious temperature readings *without* a Stream Gatherer:");
         var result1 = findSuspiciousTempReading(TempReading.loadRecentTempReadings());
-        System.out.println(result1);
+        System.out.println("[APP] " + result1 + "\n");
 
+        System.out.println("[APP] Finding suspicious temperature readings *with* a Stream Gatherer:");
         var result2 = findSuspiciousTempReadingWithGatherer(TempReading.loadRecentTempReadings());
-        System.out.println(result2);
+        System.out.println("[APP] " + result2 + "\n");
         }
 
     /*

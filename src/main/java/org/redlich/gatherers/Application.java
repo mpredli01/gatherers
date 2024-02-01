@@ -14,6 +14,7 @@ public class Application {
      */
     public static void main(String[] args) {
         displayTitle("[APP] Welcome to the Stream Gatherers Demo Application");
+        System.out.println("\n");
 
         long numberOfWords = getNumberOfNonZeroWords();
         System.out.println("[APP] There are " + numberOfWords + " non-zero words in the phrase");
