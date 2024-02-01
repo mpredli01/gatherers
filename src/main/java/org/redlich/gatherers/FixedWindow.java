@@ -47,16 +47,15 @@ public class FixedWindow {
                                 var current = new ArrayList<Integer>();
                                 current.add(element);
                                 groups.addLast(current);
-                            }
+                                }
                             else {
                                 groups.getLast().add(element);
-                            }
-                        },
+                                }
+                            },
                         (left, right) -> {
                             throw new UnsupportedOperationException("Cannot be parallelized");
-                        }
+                            }
                 ));
-
         }
 
     /*
